@@ -1,4 +1,4 @@
-# Machine Learning Roadmap
+# Statistic
 In this repository , I will share my learning notes. 
 
 Bermoulli Distribution
