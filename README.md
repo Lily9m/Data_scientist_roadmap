@@ -10,7 +10,7 @@ Up move (Su) = 1.05
 Down move (Sd) = 0.97
 Average terminal stock price (Savg) = $102.00
 
-Given these probabilities you can compute the expected value:
+To compute the expected value:
 x=p⋅105+(1−p)⋅97.
 
 Now we know that x=102, so
