@@ -1,0 +1,39 @@
+Objective: 
+What is API
+Restful
+Json file formt 
+how to use API
+
+What is API?
+API stands for Application Programming Interface. 
+It is a set of rules and protocols that allows different software applications to communicate with each other. 
+APIs define the methods and data formats that developers can use to request and exchange information between software components.
+API collects and processes a response, then returns with that response.
+
+Example Google Maps and Uber: 
+Google Maps is using Uber API to request information by sending HTTP request function with the start and end point of the ride.
+Ubers API then sends information back such as how many cars are available and the cost of the various ride options.
+This information is then processed by Google Maps and is available to the user directly linking them the Uber app. 
+API connect the world. They remove barriers with just a few taps or clicks and can easily be integrated. 
+
+CRUD: Create, Read, Update, Delete
+Http reuqest method: Get & Post 
+
+RESTful: Representation State Transfer
+
+Method：GET
+url ：https://reqres.in/api/users/<userID>
+
+method：POST
+url ：https://reqres.in/api/users/
+
+method：DELETE
+url ：https://reqres.in/api/users/<userID>
+
+method ：PATCH
+url ：https://reqres.in/api/users/<userID>
+
+JSON
+JavaScript Object Notation，
+
+APIs & Query String Parameters 
