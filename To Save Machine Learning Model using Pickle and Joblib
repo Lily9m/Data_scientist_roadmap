@@ -1,0 +1,57 @@
+To Save Machine Learning Model using Pickle and Joblib 
+House Prediction dataset.
+To predict the price given the area.
+EDA processing and feeding into 
+
+2 ways to save and load scikit-learn models:
+One method is using pickle package, it is fast but the model can take more storage than in the second approach. 
+The alternative is to use joblib package, which can save some space on disk but is slower than the pickle.
+
+Method 1: Pickle
+train Random Forest model,
+save model to disk,
+load model from disk,
+compute predictions with loaded model.
+ 
+import pickle
+
+filename = "my_model.pickle"
+
+# save model
+pickle.dump(model, open(filename, "wb"))
+
+# load model
+loaded_model = pickle.load(open(filename, "rb"))
+
+Method 2: joblib
+
+from sklearn.datasets import load_iris
+from sklearn.ensemble import RandomForestClassifier
+
+# library for save and load scikit-learn models
+import joblib
+
+# load example data from sklearn
+X, y = load_iris(return_X_y=True)
+
+# create Random Forest Classifier
+rf = RandomForestClassifier()
+
+# fit model with all data - it is just example!
+rf.fit(X, y)
+
+# file name, I'm using *.joblib as a file extension
+filename = "random_forest.joblib"
+
+# save model
+joblib.dump(rf, filename)
+
+# load model
+loaded_model = joblib.load(filename)
+
+# you can use loaded model to compute predictions
+y_predicted = loaded_model.predict(X)
+
+
+In joblib you can pass the file name in the dump() or load() functions. 
+In pickle we need to pass the file handle.
