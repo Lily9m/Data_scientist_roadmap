@@ -1,8 +1,3 @@
-To Save Machine Learning Model using Pickle and Joblib 
-House Prediction dataset.
-To predict the price given the area.
-EDA processing and feeding into 
-
 2 ways to save and load scikit-learn models:
 One method is using pickle package, it is fast but the model can take more storage than in the second approach. 
 The alternative is to use joblib package, which can save some space on disk but is slower than the pickle.
