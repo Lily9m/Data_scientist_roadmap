@@ -1,0 +1,50 @@
+Decision Tree 
+Continuously split data based on specific parameters until a final decision is made.
+
+How does a decision tree decide on the first variable to split on?
+How to decide when to stop splitting?
+What is the order used to construct a decision tree?
+
+Entropy is a metric that measures the impurity of a split in a decision tree. It determines how the decision tree chooses to partition data. 
+Entropy values range from 0 to 1. A value of 0 indicates a pure split and a value of 1 indicates an impure split
+
+This is because when the temperature is extreme, the outcome of “Play?” is always “No.” This means that we have a pure split with 100% of data points in a single class. 
+The entropy value of this split is 0, and the decision tree will stop splitting on this node.
+
+Decision trees will always select the feature with the lowest entropy to be the first node. 
+
+In this case, since the variable “Temperature” had a lower entropy value than “Wind”, this was the first split of the tree.
+
+Information gain measures the reduction in entropy when building a decision tree. 
+
+Decision trees can be constructed in a number of different ways. The tree needs to find a feature to split on first, second, third, etc. Information gain is a metric that tells us the best possible tree that can be constructed to minimize entropy.
+
+The best tree is one with the highest information gain.
+
+Cons: 
+One of the biggest drawbacks of the decision tree algorithm is that it is prone to overfitting. This means that the model is overly complex and has high variance. A model like this will have high training accuracy but will not generalize well to other datasets.
+
+  
+Random Forest 
+The random forest algorithm solves the above challenge by combining the predictions made by multiple decision trees and returning a single output. 
+Bagging is a procedure that is applied to reduce the variance of machine learning models. It works by averaging a set of observations to reduce variance.
+
+three bootstrap samples have been created from the training dataset above. The random forest algorithm goes a step further than bagging and randomly samples features so only a subset of variables are used to build each tree. 
+
+If we had more than one training dataset, we could train multiple decision trees on each dataset and average the results.
+However, since we usually only have one training dataset in most real-world scenarios, a statistical technique called bootstrap is used to sample the dataset with replacement.
+
+In regression problems, the predictions of all decision trees will be averaged to come up with a single value.
+
+In the random forest algorithm, it is not only rows that are randomly sampled, but variables too. 
+
+This is because if we were to build multiple decision trees with the same features, every tree will be similar and highly correlated with each other, potentially yielding the same result. This will again lead to the issue of high variance.
+
+Random forests typically perform better than decision trees due to the following reasons:
+
+Random forests solve the problem of overfitting because they combine the output of multiple decision trees to come up with a final prediction.
+When you build a decision tree, a small change in data leads to a huge difference in the model’s prediction. With a random forest, this problem does not arise since the data is sampled many times before generating a prediction.
+
+  https://blog.csdn.net/MyArrow/article/details/104936747?spm=1001.2101.3001.6650.8&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-8-104936747-blog-107312048.235%5Ev38%5Epc_relevant_anti_t3&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-8-104936747-blog-107312048.235%5Ev38%5Epc_relevant_anti_t3&utm_relevant_index=10
+
+  
