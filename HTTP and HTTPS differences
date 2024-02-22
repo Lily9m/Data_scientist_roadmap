@@ -1,0 +1,25 @@
+HTTP (Hypertext Transfer Protocol) and HTTPS (Hypertext Transfer Protocol Secure) are both protocols used for transmitting data over the internet. They define how messages are formatted and transmitted, and how web servers and browsers should respond to various commands.
+
+HTTP (Hypertext Transfer Protocol):
+
+Plain Text: HTTP is not secure because it transmits data in plain text. This means that if someone intercepts the communication between your browser and the server, they can easily read the information being sent, including sensitive data like login credentials or personal information.
+
+No Encryption: HTTP does not provide encryption for the data being transmitted. This lack of encryption makes it vulnerable to various security threats, such as man-in-the-middle attacks, where an attacker can eavesdrop on the communication between the user and the server.
+
+Port 80: HTTP typically uses port 80 for communication.
+
+URLs start with "http://": Websites using HTTP have URLs that begin with "http://", for example, "http://www.example.com".
+
+HTTPS (Hypertext Transfer Protocol Secure):
+
+Secure Communication: HTTPS is designed to provide a secure and encrypted communication channel over the internet. It uses SSL/TLS (Secure Sockets Layer/Transport Layer Security) protocols to encrypt the data transmitted between the user's browser and the server.
+
+Encryption: The use of encryption in HTTPS ensures that even if someone intercepts the communication, they would only see encrypted, unreadable data. This significantly enhances the security of sensitive information.
+
+Port 443: HTTPS typically uses port 443 for communication.
+
+URLs start with "https://": Websites using HTTPS have URLs that begin with "https://", for example, "https://www.example.com".
+
+Authentication: HTTPS provides a level of authentication, ensuring that the user is connecting to the intended server and not to a malicious one.
+
+Trust Indicators: Browsers often display a padlock icon or other visual indicators to signify that the connection is secure when using HTTPS.
